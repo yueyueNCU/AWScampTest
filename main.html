@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Hello, World!</h1>
+    <button onclick="changeMessage()">點擊我</button>
+    
+    <script>
+        function changeMessage() {
+            let messageElement = document.getElementById('message');
+        if (messageElement.innerText === "Hello, World!") {
+            messageElement.innerText = "你好，世界！";
+        } else {
+            messageElement.innerText = "Hello, World!";
+        }
+        }
+    </script>
+</body>
+</html>
